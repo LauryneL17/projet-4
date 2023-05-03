@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>OhMyFood</title>
   </head>
   <body>
@@ -18,11 +20,110 @@
       </div>
     </header>
     <main>
-      <h1>Réservez le menu qui vous convient</h1>
-      <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-      <button type="submit">
-        <span id="boutton-desktop">Explorer nos restaurants</span>
-      </button>
+      <div id="hero">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>
+          Découvrez des restaurants d’exception, sélectionnés par nos soins.
+        </p>
+        <button type="button" id="main-button">
+          <span id="boutton-desktop">Explorer nos restaurants</span>
+        </button>
+      </div>
+      <div class="fonctionnement container">
+        <h2>Fonctionnement</h2>
+        <section id="rechercher">
+        <button type="button">
+          <i class="fas fa-mobile-alt"></i>
+          <span id="button-fonctionnement">Choisissez un restaurant</span>
+        </button>
+        <button type="button">
+          <i class="fa-sharp fa-solid fa-list-ul"></i>
+          <span id="button-fonctionnement">Composez votre menu</span>
+        </button>
+        <button type="button">
+          <i class="fa-solid fa-store"></i>
+          <span id="button-fonctionnement">dégustez au restaurant</span>
+        </section>
+        </button>
+      </div>
+      <div id="container-menu">
+      <div class="container">
+        <h2>Restaurants</h2>
+        <div id="main-container">
+          <article class="card-heberg">
+            <a href="#">
+              <!--simuler un lien -->
+              <div>
+              <img 
+              src="./Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="la palette du goût"/>
+              </div>
+              <div class="details-heberg">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+               <i class="fa-regular fa-heart"></i>
+              </div>
+            </a>
+          </article>
+          <article class="card-heberg">
+            <a href="menu1.html">
+              <div>
+                <img 
+                src="./Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="La note enchantée"/>
+              </div>
+              <div class="details-heberg">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+                <i class="fa-sharp fa-solid fa-heart"></i>
+              </div>
+            </a>
+          </article>
+          <article class="card-heberg">
+            <a href="#">
+              <div>
+                <img 
+                src="./Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="A la française "/>
+              </div>
+              <div class="details-heberg">
+                <h3>A la française </h3>
+                <p>Cité rouge</p>
+                <i class="fa-thin fa-heart"></i>
+              </div>
+            </a>
+          </article>
+          <article class="card-heberg">
+            <a href="#">
+              <div>
+                <img 
+                src="./Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Les délices des sens "/>
+              </div>
+              <div class="details-heberg">
+                <h3>Les délices des sens </h3>
+                <p>Folie-Méricourt</p>
+                <i class="fa-thin fa-heart"></i>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+      </div>
     </main>
+    <footer>
+      <div id="footer-container">
+        <nav>
+          <ul>
+            <i class="fa-solid fa-utensils"></i>
+            <li>Proposer un restaurant</li>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <li>Devenir partenaire</li>
+            <li>Mention légales</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

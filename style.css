@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+header {
+  text-align: center;
+}
+
+#localisation {
+  background-color: #eaeaea;
+  height: 50px;
+}
+
+#hero {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+#hero p {
+  color: #353535;
+  font-size: 18px;
+}
+
+#main-button {
+  color: white;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  border-radius: 25px;
+  width: 218px;
+  height: 50px;
+}
+
+#rechercher {
+  text-align: center;
+}
+.container {
+  max-width: 1080px;
+  margin: auto;
+}
+#main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card-heberg {
+  width: 40%;
+  margin: 20px;
+}
+
+#container-menu {
+  background-color: #f6f6f6;
+}
+.card-heberg img {
+  width: 100%;
+  height: 130px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+}
+
+.details-heberg {
+  align-items: center;
+  cursor: none;
+}
+
+#footer-container {
+  background-color: #353535;
+  color: white;
+  display: flow-root;
+}
+
+nav ul li {
+  display: inline-block;
+  height: 19px;
+  margin: 15px;
+  justify-content: left;
+}
