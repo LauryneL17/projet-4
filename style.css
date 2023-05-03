@@ -6,6 +6,10 @@ h1 {
   font-size: 40px;
 }
 
+h3 {
+  margin: 0;
+}
+
 header {
   text-align: center;
 }
@@ -31,6 +35,18 @@ header {
   border-radius: 25px;
   width: 218px;
   height: 50px;
+}
+
+#corp-button {
+  background: #f7f7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 322px;
+  height: 72.38px;
+}
+
+#button-fonctionnement {
+  font-size: 16px;
 }
 
 #rechercher {
@@ -59,13 +75,16 @@ header {
 .card-heberg img {
   width: 100%;
   height: 130px;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   background-color: #f6f6f6;
+  object-fit: cover;
 }
 
 .details-heberg {
   align-items: center;
   cursor: none;
+  background-color: white;
+  border-radius: 0 0px 20px 20px;
 }
 
 #footer-container {
@@ -78,5 +97,7 @@ nav ul li {
   display: inline-block;
   height: 19px;
   margin: 15px;
-  justify-content: left;
+}
+footer ul {
+  text-align: right;
 }
