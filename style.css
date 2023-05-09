@@ -19,6 +19,13 @@ header {
   height: 50px;
 }
 
+#localisation i,
+#localisation p {
+  display: inline-block;
+  margin: 10;
+  vertical-align: middle;
+}
+
 #hero {
   text-align: center;
   background-color: #f6f6f6;
@@ -35,14 +42,27 @@ header {
   border-radius: 25px;
   width: 218px;
   height: 50px;
+  margin: 20px;
+  border: 1px solid transparent;
+}
+
+#boutton-desktop {
+  font-size: 16px;
 }
 
 #corp-button {
   background: #f7f7f7;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   width: 322px;
   height: 72.38px;
+  border: #f7f7f7;
+  margin: 10px;
+}
+
+#corp-button i {
+  color: #7e7e7e;
+  margin: 10px;
 }
 
 #button-fonctionnement {
