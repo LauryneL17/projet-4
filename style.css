@@ -122,6 +122,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+
 .card-heberg {
   width: 40%;
   margin: 20px 20px;
@@ -207,16 +209,7 @@ header {
   top: -155px;
   border-radius: 55px;
 }
-/*
-.plat h3 {
-  padding-top: 10px;
-  margin-left: 10px;
-}
-.plat p {
-  padding-bottom: 10px;
-  margin-left: 10px;
-}
-*/
+
 
 h1 {
   font-weight: 300;
@@ -238,7 +231,19 @@ p {
 .plat {
   margin: 12%;
   margin-top: 50px;
+  animation-duration: 5s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+   opacity: 0;
+  }
+  to {
+   opacity: 1;
+  }
+}
+
 .plat1 {
   background: #ffffff;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -279,10 +284,20 @@ p {
 .sidebar {
   background-color: #99e2d0;
   width: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0 15px 15px 0;
+  
 }
 .plat1:hover .sidebar {
   width: 50px;
   transition: 0.5s;
+}
+
+.sidebar i {
+  ma
 }
 
 .plat1:hover .nom-plat {
