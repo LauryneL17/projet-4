@@ -228,22 +228,54 @@ p {
   line-height: 18px;
 }
 
-.plat {
+
+.meal1 {
   margin: 12%;
   margin-top: 50px;
-  animation-duration: 5s;
-  animation-name: slidein;
+  animation-name: slidein-1;
+  animation-duration: 7s;
 }
 
-@keyframes slidein {
-  from {
-   opacity: 0;
+@keyframes slidein-1 {
+  0% {
+    opacity: 0;
   }
-  to {
-   opacity: 1;
+  20% {
+    opacity: 1;
   }
 }
 
+.meal2 {
+  margin: 12%;
+  margin-top: 50px;
+  animation-name: slidein-2;
+  animation-duration: 15s; /* Utilisez une valeur de délai différente ici */
+}
+
+@keyframes slidein-2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+
+.meal3 {
+  margin: 12%;
+  margin-top: 50px;
+  animation-name: slidein-3;
+  animation-duration: 30s;
+}
+
+@keyframes slidein-3 {
+  0% {
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+}
 .plat1 {
   background: #ffffff;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
