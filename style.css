@@ -224,18 +224,16 @@ header {
 
 .background-image {
   width: 100%;
-  margin-top: -234px;
+  margin-top: 52px;
 }
 
 .menu-container {
   background: #f7f7f7;
   position: relative;
-  margin: 0% 13%;
-  top: -155px;
-  border-radius: 55px;
+  margin: 0% 0% 33% 0%;
+  top: -45px;
+  border-radius: 50px 50px 0 0;
 }
-
-
 h1 {
   font-weight: 300;
 }
@@ -373,14 +371,16 @@ p {
   .menu-container {
     background: #f7f7f7;
     position: relative;
-    margin: 0;
-    top: -45px;
-    border-radius: 50px;
+    margin: 0% 13% 5% 13%;
+    top: -155px;
+    border-radius: 55px;
   }
+
   .background-image {
     width: 100%;
-    margin-top: 52px;
+    margin-top: -234px;
   }
+  
 
   .details-heberg i {
     margin-left: 325px;
