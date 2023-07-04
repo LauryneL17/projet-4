@@ -75,9 +75,13 @@ header {
   width: 20px;
   height: 20px;
   position: absolute;
-  left: 0;
+  left: -12px;
+  top: 25px;
   border-radius: 50%;
-  border: 2px #353535 solid;
+  border: 2px #9356DC solid;
+  background-color: #9356DC;
+  color: white;
+
 }
 .number p {
   margin: 0;
@@ -141,10 +145,27 @@ header {
   object-fit: cover;
 }
 
+
+.card-heberg p {
+  position: absolute;
+  margin-top: -123px;
+  color: green;
+  border: 2px #9fe5a5 solid;
+  background-color: #9fe5a5;
+  margin-left: 183px;
+  height: 20px;
+  width: 80px;
+  text-align: center;
+}
+
 .details-heberg {
   cursor: none;
   background-color: white;
   border-radius: 0 0px 20px 20px;
+}
+
+.details-heberg i {
+  margin-left: 250px;
 }
 
 .footer-container {
@@ -167,6 +188,10 @@ footer ul {
 .footer-container i {
   margin: 0;
   margin-right: 5px;
+}
+.footer-container img{
+  height: 15px;
+  margin-right: 10px;
 }
 
 /*autres pages*/
@@ -343,20 +368,8 @@ p {
 
 /*Téléphone en dessous de 768 */
 
-@media only screen and (max-width: 768px) {
-  .footer-container {
-    display: block;
-    padding: 22px 25px;
-  }
+@media only screen and (min-width: 769px) {
 
-  .footer-container nav ul {
-    text-align: left;
-    padding: 0;
-  }
-
-  .footer-container nav ul li {
-    display: block;
-  }
   .menu-container {
     background: #f7f7f7;
     position: relative;
@@ -368,4 +381,28 @@ p {
     width: 100%;
     margin-top: 52px;
   }
+
+  .details-heberg i {
+    margin-left: 325px;
+}
+  .card-heberg p {
+    position: absolute;
+    margin-top: -123px;
+    color: green;
+    border: 2px #9fe5a5 solid;
+    background-color: #9fe5a5;
+    margin-left: 283px;
+    height: 20px;
+    width: 80px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .card-heberg p {
+
+    margin-left: 330px;
+}
+.details-heberg i {
+  margin-left: 385px;
+}
 }
