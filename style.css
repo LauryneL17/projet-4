@@ -78,10 +78,9 @@ header {
   left: -12px;
   top: 25px;
   border-radius: 50%;
-  border: 2px #9356DC solid;
-  background-color: #9356DC;
+  border: 2px #9356dc solid;
+  background-color: #9356dc;
   color: white;
-
 }
 .number p {
   margin: 0;
@@ -127,7 +126,6 @@ header {
   justify-content: center;
 }
 
-
 .card-heberg {
   width: 40%;
   margin: 20px 20px;
@@ -144,7 +142,6 @@ header {
   background-color: #f6f6f6;
   object-fit: cover;
 }
-
 
 .card-heberg p {
   position: absolute;
@@ -189,7 +186,7 @@ footer ul {
   margin: 0;
   margin-right: 5px;
 }
-.footer-container img{
+.footer-container img {
   height: 15px;
   margin-right: 10px;
 }
@@ -251,7 +248,6 @@ p {
   line-height: 18px;
 }
 
-
 .meal1 {
   margin: 12%;
   margin-top: 50px;
@@ -295,7 +291,7 @@ p {
   0% {
     opacity: 0;
   }
-  20%{
+  20% {
     opacity: 1;
   }
 }
@@ -344,15 +340,18 @@ p {
   align-items: center;
   overflow: hidden;
   border-radius: 0 15px 15px 0;
-  
 }
 .plat1:hover .sidebar {
   width: 50px;
   transition: 0.5s;
 }
+/*fonctionne pas */
 
 .sidebar i {
-  ma
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
 }
 
 .plat1:hover .nom-plat {
@@ -367,7 +366,6 @@ p {
 /*Téléphone en dessous de 768 */
 
 @media only screen and (min-width: 769px) {
-
   .menu-container {
     background: #f7f7f7;
     position: relative;
@@ -380,11 +378,10 @@ p {
     width: 100%;
     margin-top: -234px;
   }
-  
 
   .details-heberg i {
     margin-left: 325px;
-}
+  }
   .card-heberg p {
     position: absolute;
     margin-top: -123px;
@@ -399,10 +396,9 @@ p {
 }
 @media only screen and (min-width: 1025px) {
   .card-heberg p {
-
     margin-left: 330px;
-}
-.details-heberg i {
-  margin-left: 385px;
-}
+  }
+  .details-heberg i {
+    margin-left: 385px;
+  }
 }
