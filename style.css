@@ -1,8 +1,53 @@
 body {
   margin: 0;
   max-width: 1440px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.spinner {
+  border: 5px solid lightgrey;
+  border-top: 5px solid blue;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: spin 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes spin {
+  100% {
+    transform: translate(0%) rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.ajout {
+  animation-name: verif;
+  animation-duration: 5s;
+}
+
+@keyframes verif {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo p {
+  font-family: Shrikhand;
+  font-size: 29px;
+  margin-bottom: 24px;
+  margin-top: -28px;
+}
+.hero h1 {
+  padding: 20px;
+  font-weight: bold;
+}
 h1 {
   font-size: 40px;
   margin: auto;
@@ -52,6 +97,7 @@ header {
 .hero p {
   color: #353535;
   font-size: 18px;
+  margin: 4px;
 }
 
 .main-button {
@@ -63,6 +109,11 @@ header {
   margin: 20px;
   border: 1px solid transparent;
   margin-top: 50px;
+  cursor: pointer;
+}
+.main-button:hover {
+  background: linear-gradient(193.33deg, #b084e5 -11.44%, #ffade7 123.93%);
+  box-shadow: 3px 2px 2px #b084e5;
 }
 
 .center-container {
@@ -81,6 +132,9 @@ header {
   border: 2px #9356dc solid;
   background-color: #9356dc;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .number p {
   margin: 0;
@@ -130,6 +184,7 @@ header {
   width: 40%;
   margin: 20px 20px;
   min-width: 280px;
+  position: relative;
 }
 
 .container-menu {
@@ -145,24 +200,51 @@ header {
 
 .card-heberg p {
   position: absolute;
-  margin-top: -123px;
-  color: green;
-  border: 2px #9fe5a5 solid;
-  background-color: #9fe5a5;
-  margin-left: 183px;
-  height: 20px;
-  width: 80px;
-  text-align: center;
+  color: #008766;
+  border: 2px #99e2d0 solid;
+  background-color: #99e2d0;
+  padding: 7px;
+  top: 0;
+  right: 10px;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 .details-heberg {
-  cursor: none;
+  cursor: pointer;
   background-color: white;
   border-radius: 0 0px 20px 20px;
+  height: 80px;
+}
+.details-heberg h3 {
+  padding: 10px;
+  font-weight: bold;
+}
+.details-heberg h4 {
+  margin-top: -8px;
+  font-weight: normal;
+  padding: 10px;
+}
+.card-heberg a {
+  text-decoration: none;
+  color: black;
+}
+.details-heberg i {
+  position: absolute;
+  right: 23px;
+  top: 154px;
 }
 
-.details-heberg i {
-  margin-left: 250px;
+.icon-heart:hover .fa-regular {
+  display: none; /* Lorsque l'élément <a> est survolé, le cœur vide est masqué */
+}
+
+.icon-heart .fa-solid {
+  display: none; /* Par défaut, le cœur plein est masqué */
+}
+
+.icon-heart:hover .fa-solid {
+  display: inline-block; /* Lorsque l'élément <a> est survolé, le cœur plein est affiché */
 }
 
 .footer-container {
@@ -174,10 +256,16 @@ header {
   margin: inherit;
 }
 .footer-container ul li {
-  display: inline-block;
+  display: flex;
   height: 19px;
   margin: 15px;
+  margin-left: -15px;
 }
+
+.footer-container ul li:last-child {
+  font-family: Shrikhand;
+}
+
 footer ul {
   text-align: right;
 }
@@ -200,12 +288,12 @@ footer ul {
 }
 .logos img {
   margin: 2%;
-  width: 15%;
+  width: 50%;
 }
 .menu-container h1 {
   font-family: "Shrikhand";
   font-style: italic;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 50px;
   line-height: 41px;
   margin: 25px;
@@ -221,7 +309,7 @@ header {
 
 .background-image {
   width: 100%;
-  margin-top: 52px;
+  margin-top: 58px;
 }
 
 .menu-container {
@@ -235,31 +323,29 @@ h1 {
   font-weight: 300;
 }
 h3 {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
   line-height: 21px;
 }
 p {
-  font-family: "Roboto";
   font-style: normal;
-  font-size: 15px;
+
   line-height: 18px;
 }
 
 .meal1 {
   margin: 12%;
   margin-top: 50px;
-  animation-name: slidein-1;
-  animation-duration: 7s;
+  animation-name: slidein;
+  animation-duration: 2s;
 }
 
-@keyframes slidein-1 {
+@keyframes slidein {
   0% {
     opacity: 0;
   }
-  20% {
+  100% {
     opacity: 1;
   }
 }
@@ -267,34 +353,17 @@ p {
 .meal2 {
   margin: 12%;
   margin-top: 50px;
-  animation-name: slidein-2;
-  animation-duration: 15s; /* Utilisez une valeur de délai différente ici */
-}
-
-@keyframes slidein-2 {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
+  animation-name: slidein;
+  animation-duration: 5s;
 }
 
 .meal3 {
   margin: 12%;
   margin-top: 50px;
-  animation-name: slidein-3;
-  animation-duration: 30s;
+  animation-name: slidein;
+  animation-duration: 8s;
 }
 
-@keyframes slidein-3 {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-}
 .plat1 {
   background: #ffffff;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -314,10 +383,15 @@ p {
 .plat1 h3 {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: bold;
+}
+.menu-container h2 {
+  font-weight: normal;
 }
 .nom-plat {
   width: calc(100% - 50px);
   transition: 0.5s;
+  cursor: pointer;
 }
 .prix-plat {
   display: flex;
@@ -330,6 +404,7 @@ p {
 .prix-plat p {
   position: absolute;
   bottom: 10px;
+  font-weight: bold;
 }
 
 .sidebar {
@@ -345,13 +420,16 @@ p {
   width: 50px;
   transition: 0.5s;
 }
-/*fonctionne pas */
 
 .sidebar i {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   color: white;
+  border: 2px white solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .plat1:hover .nom-plat {
@@ -362,8 +440,7 @@ p {
   position: relative;
   top: -155px;
 }
-
-/*Téléphone en dessous de 768 */
+/* changement  taille ecrant */
 
 @media only screen and (min-width: 769px) {
   .menu-container {
@@ -379,26 +456,21 @@ p {
     margin-top: -234px;
   }
 
-  .details-heberg i {
-    margin-left: 325px;
+  .footer-container ul li {
+    display: inline;
+    padding: 8px;
   }
-  .card-heberg p {
-    position: absolute;
-    margin-top: -123px;
-    color: green;
-    border: 2px #9fe5a5 solid;
-    background-color: #9fe5a5;
-    margin-left: 283px;
-    height: 20px;
-    width: 80px;
-    text-align: center;
+  .logos img {
+    margin: 2%;
+    width: 375px;
+    height: 63px;
+  }
+  .background-image {
+    margin-top: 100px;
   }
 }
 @media only screen and (min-width: 1025px) {
-  .card-heberg p {
-    margin-left: 330px;
-  }
   .details-heberg i {
-    margin-left: 385px;
+    right: 30px;
   }
 }
