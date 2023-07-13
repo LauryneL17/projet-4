@@ -17,11 +17,19 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <title>Menu la palette du goût</title>
   </head>
   <body>
     <header>
+      <a href="index.html" class="retour">
+        <img src="./images/logo/fleche.jpeg" alt="Flèche de retour" />
+      </a>
       <div class="logos">
         <img src="./images/logo/ohmyfood@2x.svg" alt="logo" />
       </div>
@@ -37,14 +45,19 @@
       <section class="menu-container">
         <div class="icon">
           <h1>La palette du gôut</h1>
-          <i class="fa-regular fa-heart"></i>
+          <div class="heart"></div>
+          <div class="icon-heart">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-sharp fa-solid fa-heart"></i>
+          </div>
+          </div>
         </div>
         <article class="meal1">
           <h2>ENTREES</h2>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Fricassée d'escargot</h3>
-              <p>Au piment d'espelette</p>
+              <h3 class="overflow-ellipsis">Fricassée d'escargot</h3>
+              <p class="overflow-ellipsis">Au piment d'espelette</p>
             </div>
             <div class="prix-plat">
               <p>25€</p>
@@ -55,8 +68,8 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Foie fras de canard mi-cuit</h3>
-              <p>Et ses copeaux de truffe noire</p>
+              <h3 class="overflow-ellipsis">Foie fras de canard mi-cuit</h3>
+              <p class="overflow-ellipsis">Et ses copeaux de truffe noire</p>
             </div>
             <div class="prix-plat">
               <p>35€</p>
@@ -67,8 +80,10 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Oeuf au plat</h3>
-              <p>Assaissoné à la truffe sur une lit de caviar</p>
+              <h3 class="overflow-ellipsis">Oeuf au plat</h3>
+              <p class="overflow-ellipsis">
+                Assaissoné à la truffe sur une lit de caviar
+              </p>
             </div>
             <div class="prix-plat">
               <p>20€</p>
@@ -82,8 +97,10 @@
           <h2>PLATS</h2>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>filet de boeuf aux herbes</h3>
-              <p>Accompagné de sa ribambelle de légumes</p>
+              <h3 class="overflow-ellipsis">filet de boeuf aux herbes</h3>
+              <p class="overflow-ellipsis">
+                Accompagné de sa ribambelle de légumes
+              </p>
             </div>
             <div class="prix-plat">
               <p>40€</p>
@@ -94,8 +111,10 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Parmentier de queue de boeuf</h3>
-              <p>A la truffe noire sur sa purée de panais</p>
+              <h3 class="overflow-ellipsis">Parmentier de queue de boeuf</h3>
+              <p class="overflow-ellipsis">
+                A la truffe noire sur sa purée de panais
+              </p>
             </div>
             <div class="prix-plat">
               <p>35€</p>
@@ -133,8 +152,10 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Macaron au chocolat d'exception</h3>
-              <p>Et glace à la vanille de Madagascar</p>
+              <h3 class="overflow-ellipsis">Macaron au chocolat d'exception</h3>
+              <p class="overflow-ellipsis">
+                Et glace à la vanille de Madagascar
+              </p>
             </div>
             <div class="prix-plat">
               <p>22€</p>
@@ -145,8 +166,10 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Mousse au chocolat</h3>
-              <p>Au piment d'Espelette et à la truffe noire</p>
+              <h3 class="overflow-ellipsis">Mousse au chocolat</h3>
+              <p class="overflow-ellipsis">
+                Au piment d'Espelette et à la truffe noire
+              </p>
             </div>
             <div class="prix-plat">
               <p>23€</p>
@@ -177,7 +200,7 @@
             </li>
             <li>Mention légales</li>
             <li>Contact</li>
-            <li>ohmyfood</li>
+            <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
           </ul>
         </nav>
       </div>

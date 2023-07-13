@@ -12,10 +12,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <title>La note enchantée</title>
   </head>
   <body>
     <header>
+      <a href="index.html" class="retour">
+        <img src="./images/logo/fleche.jpeg" alt="Flèche de retour" />
+      </a>
       <div class="logos">
         <img src="./images/logo/ohmyfood@2x.svg" alt="logo" />
       </div>
@@ -31,14 +44,19 @@
       <section class="menu-container">
         <div class="icon">
           <h1>La note enchantée</h1>
-          <i class="fa-regular fa-heart"></i>
+          <div class="icon-heart">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-sharp fa-solid fa-heart"></i>
+          </div>
         </div>
         <article class="meal1">
           <h2>ENTREES</h2>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Ravioles de foie gras</h3>
-              <p>Accompagnées de leur crème à la truffe</p>
+              <h3 class="overflow-ellipsis">Ravioles de foie gras</h3>
+              <p class="overflow-ellipsis">
+                Accompagnées de leur crème à la truffe
+              </p>
             </div>
             <div class="prix-plat">
               <p>25€</p>
@@ -49,8 +67,8 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Caviar osciètre</h3>
-              <p>Sur blini à la farine de blé noir</p>
+              <h3 class="overflow-ellipsis">Caviar osciètre</h3>
+              <p class="overflow-ellipsis">Sur blini à la farine de blé noir</p>
             </div>
             <div class="prix-plat">
               <p>35€</p>
@@ -61,8 +79,8 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Homard et espuma de potiron</h3>
-              <p>Marinés aux zestes d'ornage</p>
+              <h3 class="overflow-ellipsis">Homard et espuma de potiron</h3>
+              <p class="overflow-ellipsis">Marinés aux zestes d'ornage</p>
             </div>
             <div class="prix-plat">
               <p>20€</p>
@@ -73,8 +91,8 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Foie gras de canard cuit entier</h3>
-              <p>Confiture de figue et pain taosté</p>
+              <h3 class="overflow-ellipsis">Foie gras de canard cuit entier</h3>
+              <p class="overflow-ellipsis">Confiture de figue et pain taosté</p>
             </div>
             <div class="prix-plat">
               <p>35€</p>
@@ -88,8 +106,8 @@
           <h2>PLATS</h2>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Noix de coquilles Saint-Jacques</h3>
-              <p>Sur lit de purée de céléri-rave</p>
+              <h3 class="overflow-ellipsis">Noix de coquilles Saint-Jacques</h3>
+              <p class="overflow-ellipsis">Sur lit de purée de céléri-rave</p>
             </div>
             <div class="prix-plat">
               <p>40€</p>
@@ -100,8 +118,8 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Langoustine poêlée</h3>
-              <p>Purée de patate douce</p>
+              <h3 class="overflow-ellipsis">Langoustine poêlée</h3>
+              <p class="overflow-ellipsis">Purée de patate douce</p>
             </div>
             <div class="prix-plat">
               <p>35€</p>
@@ -112,8 +130,10 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Mijoté de queue de boeuf</h3>
-              <p>Et riz sauvage aux zestes de citron</p>
+              <h3 class="overflow-ellipsis">Mijoté de queue de boeuf</h3>
+              <p class="overflow-ellipsis">
+                Et riz sauvage aux zestes de citron
+              </p>
             </div>
             <div class="prix-plat">
               <p>45€</p>
@@ -127,8 +147,10 @@
           <h2>DESSERTS</h2>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Macaron noisette et chocolat</h3>
-              <p>Glace au caramel brun et sel de Guérande</p>
+              <h3 class="overflow-ellipsis">Macaron noisette et chocolat</h3>
+              <p class="overflow-ellipsis">
+                Glace au caramel brun et sel de Guérande
+              </p>
             </div>
             <div class="prix-plat">
               <p>18€</p>
@@ -139,8 +161,8 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Baba au rhum revisté</h3>
-              <p>Avec son coulis de citron</p>
+              <h3 class="overflow-ellipsis">Baba au rhum revisté</h3>
+              <p class="overflow-ellipsis">Avec son coulis de citron</p>
             </div>
             <div class="prix-plat">
               <p>22€</p>
@@ -151,8 +173,8 @@
           </div>
           <div class="plat1">
             <div class="nom-plat">
-              <h3>Tarte au citron meringuée</h3>
-              <p>Déstructurée</p>
+              <h3 class="overflow-ellipsis">Tarte au citron meringuée</h3>
+              <p class="overflow-ellipsis">Déstructurée</p>
             </div>
             <div class="prix-plat">
               <p>23€</p>
@@ -180,7 +202,7 @@
             </li>
             <li>Mention légales</li>
             <li>Contact</li>
-            <li>ohmyfood</li>
+            <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
           </ul>
         </nav>
       </div>
